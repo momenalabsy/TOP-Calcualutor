@@ -72,7 +72,8 @@ for (let i = 0; i < clickedElement.length; i++) {
         }
       }
     } else if (target.innerHTML === "clear") {
-      result.innerHTML = "0";
+      result.innerHTML = "";
+      fakeResult.innerHTML = "0";
       sessionStorage.clear();
     } else if (target.innerHTML === "=") {
       if (operator && resultOne && resultTwo) {
@@ -85,8 +86,7 @@ for (let i = 0; i < clickedElement.length; i++) {
         sessionStorage.setItem("resultTwo", "");
         sessionStorage.setItem("operator", "");
       }
-    } else if (op) {
-      fakeResult.innerHTML = "";
+    } else if (op && resultOne) {
       result.innerHTML = "";
       fakeResult.innerHTML = "0";
 
