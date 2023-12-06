@@ -87,8 +87,8 @@ for (let i = 0; i < clickedElement.length; i++) {
         sessionStorage.setItem("operator", "");
       }
     } else if (op && resultOne) {
+      fakeResult.innerHTML = result.innerHTML;
       result.innerHTML = "";
-      fakeResult.innerHTML = "0";
 
       sessionStorage.setItem(
         "operator",
