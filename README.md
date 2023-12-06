@@ -1,3 +1,7 @@
 # The Odin Project-Calcualutor
-a Calcualutor
-Wroking with both mouse and keyboard
+
+a Calculator
+
+Working seamlessly with both mouse and keyboard functionalities.
+
+I intentionally employed varied methods to maximize my practice efforts.

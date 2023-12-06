@@ -102,6 +102,13 @@ for (let i = 0; i < clickedElement.length; i++) {
           ? "divide"
           : null
       );
+      if (resultOne && operator && resultTwo) {
+        result.innerHTML = operate(operator, +resultOne, +resultTwo);
+        sessionStorage.setItem("resultOne", result.innerHTML);
+        fakeResult.innerHTML = result.innerHTML;
+        result.innerHTML = "";
+        sessionStorage.setItem("resultTwo", "");
+      }
     }
   });
 }
